@@ -34,7 +34,9 @@
     "JUnit.All in va06.executor": "Run",
     "JUnit.AudioFileTest.test_parsePathname_xy2.executor": "Run",
     "JUnit.TestParseFilename.testParseFilename03.executor": "Debug",
+    "JUnit.TestParsePathname.executor": "Run",
     "JUnit.TestParsePathname.testParsePathname01.executor": "Debug",
+    "JUnit.TestParsePathname.testParsePathname02.executor": "Debug",
     "JUnit.TestParsePathname.testParsePathname03.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -46,15 +48,7 @@
     "last_opened_file_path": "/home/aleksendeavouros/Uni/GDP2/Gdp2_Praktikum/va06"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestParsePathname.testParsePathname01">
-    <configuration name="All in va06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="va06" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestParsePathname">
     <configuration name="AudioFileTest.test_parsePathname_xy2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="va06" />
       <option name="PACKAGE_NAME" value="" />
@@ -75,6 +69,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestParsePathname" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="va06" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestParsePathname" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestParsePathname.testParsePathname01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="va06" />
       <option name="PACKAGE_NAME" value="" />
@@ -85,11 +88,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestParsePathname.testParsePathname03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestParsePathname.testParsePathname02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="va06" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestParsePathname" />
-      <option name="METHOD_NAME" value="testParsePathname03" />
+      <option name="METHOD_NAME" value="testParsePathname02" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,11 +100,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestParsePathname" />
+        <item itemvalue="JUnit.TestParsePathname.testParsePathname02" />
         <item itemvalue="JUnit.TestParsePathname.testParsePathname01" />
         <item itemvalue="JUnit.TestParseFilename.testParseFilename03" />
         <item itemvalue="JUnit.AudioFileTest.test_parsePathname_xy2" />
-        <item itemvalue="JUnit.All in va06" />
-        <item itemvalue="JUnit.TestParsePathname.testParsePathname03" />
       </list>
     </recent_temporary>
   </component>
@@ -128,6 +131,11 @@
           <url>file://$PROJECT_DIR$/tests/TestParsePathname.java</url>
           <line>53</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tests/TestParsePathname.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

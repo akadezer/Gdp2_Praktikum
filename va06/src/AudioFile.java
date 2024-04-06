@@ -39,7 +39,7 @@ public class AudioFile{
 
 
 	// Testet ob der Pfadseperator öfter vorkommt
-		for (int i = 0; i < path.length(); i++){
+		for (int i = 0; i < path.length()-1; i++){
 
 			if (path.charAt(i) == path.charAt(i + 1) && path.charAt(i) == sep){
 				path = path.substring(0,(i+1)) + path.substring(i+2);
@@ -48,11 +48,11 @@ public class AudioFile{
 
 
 		pathname = path;
-		if (path.lastIndexOf(sep)){
-
-			filename =  path.substring(path.lastIndexOf(sep)+1);
+		if (path.charAt(path.lastIndexOf(sep)) == path.charAt(path.length()-1)){
+			filename = "";
+		}else {
+			filename = path.substring(path.lastIndexOf(sep) + 1);
 		}
-
 	}
 
 	public void parseFilename(String filename){
