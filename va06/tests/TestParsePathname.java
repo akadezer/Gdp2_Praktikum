@@ -240,8 +240,7 @@ public class TestParsePathname {
 	@Test
 	public void testParsePathname13() {
 		String pathname = "../your-tmp/..//part1//file.mp3/";
-		String expectedPathname = ".." + sep + "your-tmp" + sep + ".." 
-				+ sep + "part1" + sep + "file.mp3" + sep;
+		String expectedPathname = ".." + sep + "your-tmp" + sep + ".." + sep + "part1" + sep + "file.mp3" + sep;
 		String expectedFilename = "";
 		
 		AudioFile af = new AudioFile();

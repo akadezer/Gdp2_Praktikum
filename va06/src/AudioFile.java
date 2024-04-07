@@ -1,4 +1,5 @@
-
+import java.io.File;
+import java.nio.file.FileSystems;
 
 public class AudioFile{
 
@@ -7,6 +8,7 @@ public class AudioFile{
 	private String filename; // Dateiname
 	private String author; // Autor
 	private String title; // Titel
+
 
 
 	public AudioFile(){
@@ -19,11 +21,11 @@ public class AudioFile{
 	}
 	
 	public void parsePathname(String path){
-		char sep;
+		String sep;
 		if (isWindows()){
-			 sep = Utils.emulateWindows();
+			 sep = System.getProperty("file.separator");
 		}else {
-			sep = Utils.emulateLinux();
+			sep = System.getProperty("file.separator");
 		}
 		//Laufwerkskorrektur
 		if (!isWindows()){
@@ -35,38 +37,59 @@ public class AudioFile{
 
 
 		}
+			// falsche separatoren
 
 
-
-	// Testet ob der Pfadseperator öfter vorkommt
-		for (int i = 0; i < path.length()-1; i++){
-
-			if (path.charAt(i) == path.charAt(i + 1) && path.charAt(i) == sep){
-				path = path.substring(0,(i+1)) + path.substring(i+2);
+			if(!isWindows() ){
+				while(path.contains("\\"))
+				path = path.replace( "\\" ,sep );
 			}
-		}
+
+			if (isWindows()){
+				while (path.contains("/")){
+				path =	path.replace("/",sep);
+				}
+			}
 
 
-		pathname = path;
-		if (path.charAt(path.lastIndexOf(sep)) == path.charAt(path.length()-1)){
+        while(path.contains(sep+sep)) {
+			path = path.replace(sep+sep, sep);
+
+        }
+		path = path.trim();
+        pathname = path;
+		if (path.lastIndexOf(sep) == path.length()-1){
 			filename = "";
 		}else {
-			filename = path.substring(path.lastIndexOf(sep) + 1);
+			path =  path.substring(path.lastIndexOf(sep) + 1);
+			path = path.trim();
+			filename = path;
 		}
 	}
 
 	public void parseFilename(String filename){
 
-		filename = 	filename.substring(0,filename.lastIndexOf("."));
-		if (filename.contains(" - ")){
-		// Trennung zwischen Autor und Titel
-	String[] fileparts = filename.split(" - ");
-	author = fileparts[0].trim();
-	title = fileparts[1].trim();
+
+		if (filename.contains(".")){
+
+			filename = 	filename.substring(0,filename.lastIndexOf("."));
+
+		}
+		if (filename.equals(" - ")){
+			author = "";
+			title = "";
+
+		}else if (filename.contains(" - ")){
+			// Trennung zwischen Autor und Titel
+			String[] fileparts = filename.split(" - ");
+			author = fileparts[0].trim();
+			title = fileparts[1].trim();
 		}else {
+			filename = filename.trim();
+			author = "";
 			title = filename;
 		}
-	if (filename.equals("-") ){
+		if (filename.equals("-") ){
 		author = "";
 		title = "-";
 	}
