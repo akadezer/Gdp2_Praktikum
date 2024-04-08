@@ -35,14 +35,14 @@ public class AudioFile{
 
 
 			if(!isWindows() ){
-				while(path.contains("\\"))
+		
 				path = path.replace( "\\" ,sep );
 			}
 
 			if (isWindows()){
-				while (path.contains("/")){
+				
 				path =	path.replace("/",sep);
-				}
+				
 			}
 
 
