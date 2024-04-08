@@ -1,5 +1,3 @@
-import java.io.File;
-import java.nio.file.FileSystems;
 
 public class AudioFile{
 
@@ -21,12 +19,8 @@ public class AudioFile{
 	}
 	
 	public void parsePathname(String path){
-		String sep;
-		if (isWindows()){
-			 sep = System.getProperty("file.separator");
-		}else {
-			sep = System.getProperty("file.separator");
-		}
+		String sep = System.getProperty("file.separator");
+	
 		//Laufwerkskorrektur
 		if (!isWindows()){
 
