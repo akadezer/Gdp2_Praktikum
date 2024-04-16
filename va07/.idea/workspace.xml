@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="596369d6-ac3b-4926-b47b-5f61995901de" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AudioFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AudioFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestParsePathname.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestParsePathname.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2edoEQmHXWBJk0PyyOIaLKhkQ6y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AudioFile.executor": "Debug",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.All in va06.executor": "Run",
+    "JUnit.AudioFileTest.test_parsePathname_xy2.executor": "Run",
+    "JUnit.TestParseFilename.executor": "Run",
+    "JUnit.TestParseFilename.testParseFilename03.executor": "Debug",
+    "JUnit.TestParseFilename.testParseFilename06.executor": "Debug",
+    "JUnit.TestParseFilename.testParseFilename07.executor": "Debug",
+    "JUnit.TestParseFilename.testParseFilename11.executor": "Debug",
+    "JUnit.TestParsePathname.executor": "Run",
+    "JUnit.TestParsePathname.testParsePathname01.executor": "Debug",
+    "JUnit.TestParsePathname.testParsePathname02.executor": "Debug",
+    "JUnit.TestParsePathname.testParsePathname03.executor": "Run",
+    "JUnit.TestParsePathname.testParsePathname05.executor": "Debug",
+    "JUnit.TestParsePathname.testParsePathname08.executor": "Debug",
+    "JUnit.TestParsePathname.testParsePathname12.executor": "Debug",
+    "JUnit.TestToString.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/aleksendeavouros/Uni/GDP2/Gdp2_Praktikum/va06"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.All in va06">
+    <configuration name="All in va06" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="va06" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestParseFilename" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="va06" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestParseFilename" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestParseFilename.testParseFilename07" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="va06" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestParseFilename" />
+      <option name="METHOD_NAME" value="testParseFilename07" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestParseFilename.testParseFilename11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="va06" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestParseFilename" />
+      <option name="METHOD_NAME" value="testParseFilename11" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="va06" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestToString" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in va06" />
+        <item itemvalue="JUnit.TestToString" />
+        <item itemvalue="JUnit.TestParseFilename" />
+        <item itemvalue="JUnit.TestParseFilename.testParseFilename11" />
+        <item itemvalue="JUnit.TestParseFilename.testParseFilename07" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="596369d6-ac3b-4926-b47b-5f61995901de" name="Changes" comment="" />
+      <created>1712243703932</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1712243703932</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tests/TestParsePathname.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tests/TestParsePathname.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tests/TestParsePathname.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tests/TestParsePathname.java</url>
+          <line>166</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tests/TestParsePathname.java</url>
+          <line>230</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tests/TestParseFilename.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tests/TestParseFilename.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tests/TestParseFilename.java</url>
+          <line>177</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
