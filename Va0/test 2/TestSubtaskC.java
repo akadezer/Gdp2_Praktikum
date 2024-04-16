@@ -17,8 +17,7 @@ public class TestSubtaskC {
 
 	@Test
 	public void test_computeDuration() {
-		assertEquals("wrong value for duration!", 141400816L,
-				WavFile.computeDuration(6235776L, 44100.0f));
+		assertEquals("wrong value for duration!", 141400816L, WavFile.computeDuration(6235776L, 44100.0f));
 	}
 
 	@Test

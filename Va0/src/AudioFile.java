@@ -1,127 +1,120 @@
 
-public class AudioFile{
-
+public class AudioFile {
 
 	private String pathname; // Pfadname
 	private String filename; // Dateiname
 	private String author; // Autor
 	private String title; // Titel
 
-
-
-	public AudioFile(){
+	public AudioFile() {
 
 	}
+
 	public AudioFile(String path) {
 		parsePathname(path);
 		parseFilename(filename);
 
 	}
-	
-	public void parsePathname(String path){
+
+	public void parsePathname(String path) {
 		String sep = System.getProperty("file.separator");
-	
-		//Laufwerkskorrektur
-		if (!isWindows()){
 
-		if (path.contains(":")){
+		// Laufwerkskorrektur
+		if (!isWindows()) {
 
-			path = sep + path.substring(0,path.indexOf(":")) + path.substring(path.indexOf(":")+1);
-		}
+			if (path.contains(":")) {
 
-
-		}
-			// falsche separatoren
-
-
-			if(!isWindows() ){
-		
-				path = path.replace( "\\" ,sep );
+				path = sep + path.substring(0, path.indexOf(":")) + path.substring(path.indexOf(":") + 1);
 			}
 
-			if (isWindows()){
-				
-				path =	path.replace("/",sep);
-				
-			}
+		}
+		// falsche separatoren
 
+		if (!isWindows()) {
 
-        while(path.contains(sep+sep)) {
-			path = path.replace(sep+sep, sep);
+			path = path.replace("\\", sep);
+		}
 
-        }
+		if (isWindows()) {
+
+			path = path.replace("/", sep);
+
+		}
+
+		while (path.contains(sep + sep)) {
+			path = path.replace(sep + sep, sep);
+
+		}
 		path = path.trim();
-        pathname = path;
-		if (path.lastIndexOf(sep) == path.length()-1){
+		pathname = path;
+		if (path.lastIndexOf(sep) == path.length() - 1) {
 			filename = "";
-		}else {
-			path =  path.substring(path.lastIndexOf(sep) + 1);
+		} else {
+			path = path.substring(path.lastIndexOf(sep) + 1);
 			path = path.trim();
 			filename = path;
 		}
 	}
 
-	public void parseFilename(String filename){
+	public void parseFilename(String filename) {
 
+		if (filename.contains(".")) {
 
-		if (filename.contains(".")){
-
-			filename = 	filename.substring(0,filename.lastIndexOf("."));
+			filename = filename.substring(0, filename.lastIndexOf("."));
 
 		}
-		if (filename.equals(" - ")){
+		if (filename.equals(" - ")) {
 			author = "";
 			title = "";
 
-		}else if (filename.contains(" - ")){
+		} else if (filename.contains(" - ")) {
 			// Trennung zwischen Autor und Titel
 			String[] fileparts = filename.split(" - ");
 			author = fileparts[0].trim();
 			title = fileparts[1].trim();
-		}else {
+		} else {
 			filename = filename.trim();
 			author = "";
 			title = filename;
 		}
-		if (filename.equals("-") ){
-		author = "";
-		title = "-";
+		if (filename.equals("-")) {
+			author = "";
+			title = "-";
+		}
+
 	}
 
+	// Getter-Methoden
+	public String getPathname() {
 
-	}
-
-	//Getter-Methoden
-	public String getPathname(){
-		
 		return pathname;
 
 	}
-	
+
 	public String getFilename() {
 		return filename;
 	}
 
-	public String getAuthor(){
+	public String getAuthor() {
 		return author;
 	}
 
-	public String getTitle(){
+	public String getTitle() {
 		return title;
 	}
 
 	@Override
 	public String toString() {
-		if (getAuthor().equals("")){
+		if (getAuthor().equals("")) {
 			return getTitle();
-		}else{
-		return getAuthor() + " - " + getTitle();}
+		} else {
+			return getAuthor() + " - " + getTitle();
+		}
 	}
 
 	// Systemabfrage
-private boolean isWindows() {
-	return System.getProperty("os.name").toLowerCase().indexOf("win") >= 0;
-}
-
+	private boolean isWindows() {
+		return System.getProperty("os.name").toLowerCase().indexOf("win") >= 0;
+	}
 
 }

@@ -23,7 +23,7 @@ public class TestSubtaskA {
 			fail("File is readable!");
 		}
 	}
-	
+
 	@Test
 	public void testPlaySong() throws InterruptedException {
 		TaggedFile tf1 = new TaggedFile("audiofiles/Rock 812.mp3");
@@ -48,8 +48,8 @@ public class TestSubtaskA {
 		tf1.togglePause();
 		Thread.sleep(2000);
 		long position = BasicPlayer.getPosition();
-		//System.out.println(position);
-		assertTrue("Song did not play for 4 seconds!", 4000000L < position);		
+		// System.out.println(position);
+		assertTrue("Song did not play for 4 seconds!", 4000000L < position);
 	}
 
 	@Test
@@ -61,7 +61,7 @@ public class TestSubtaskA {
 		Thread.sleep(3000);
 		tf1.stop();
 		long position = BasicPlayer.getPosition();
-		//System.out.println(position);
-		assertTrue("Song did not play for 3 seconds!", 3000000L < position);		
+		// System.out.println(position);
+		assertTrue("Song did not play for 3 seconds!", 3000000L < position);
 	}
 }
