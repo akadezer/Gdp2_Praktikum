@@ -1,5 +1,5 @@
 
-public class AudioFile {
+abstract public class AudioFile {
 
 	private String pathname; // Pfadname
 	private String filename; // Dateiname
@@ -83,6 +83,17 @@ public class AudioFile {
 		}
 
 	}
+
+	// abstract methods
+	public abstract void play();
+
+	public abstract void togglePause();
+
+	public abstract void stop();
+
+	public abstract String formatDuration();
+
+	public abstract String formatPositon();
 
 	// Getter-Methoden
 	public String getPathname() {

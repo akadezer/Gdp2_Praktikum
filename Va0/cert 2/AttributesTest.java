@@ -8,6 +8,8 @@ import java.lang.reflect.Field;
 
 import org.junit.Test;
 
+import test.AudioFile;
+
 @SuppressWarnings("rawtypes")
 public class AttributesTest {
 	// List of all classes
