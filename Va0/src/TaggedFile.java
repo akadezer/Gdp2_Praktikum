@@ -1,25 +1,25 @@
 
 public class TaggedFile extends SampledFile {
 
-	public TaggedFile() {
+    public TaggedFile() {
+        super();
+    }
 
-	}
+    public TaggedFile(String path) {
+        super(path);
+    }
 
-	public TaggedFile(String path) {
-		
-	}
-	
-	public String getAlbum() {
-		return "";
-	}
-	
-	public void readAndStoreTags() {
-		
-	}
-	
+    public String getAlbum() {
+        return "";
+    }
 
-	public String toString() {
+    public void readAndStoreTags() {
 
-		return "";
-	}
+    }
+
+
+    public String toString() {
+
+        return "";
+    }
 }
