@@ -11,7 +11,7 @@ abstract public class SampledFile extends AudioFile {
 	}
 
 	public void play() {
-		BasicPlayer.play(getFilename());
+		BasicPlayer.play(getPathname());
 	}
 
 	public void togglePause() {

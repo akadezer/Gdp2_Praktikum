@@ -14,7 +14,7 @@ abstract public class AudioFile {
     public AudioFile(String path) {
         parsePathname(path);
         parseFilename(filename);
-        File file = new File(filename);
+        File file = new File(getPathname());
         if (!file.canRead()){
             throw new RuntimeException();
         }
