@@ -10,7 +10,7 @@ import java.util.Hashtable;
 import org.junit.Before;
 import org.junit.Test;
 
-import test.AudioFile;
+//import test.AudioFile;
 
 public class AudioFileTest {
 	@SuppressWarnings("rawtypes")
